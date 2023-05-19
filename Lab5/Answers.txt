@@ -1,0 +1,157 @@
+#Question 1
+student_name	
+Maria White	
+Charles Harris	
+
+#Question 2
+22	
+
+#Question 3
+student_name	    NAME	
+Maria White	        Data Structures	
+Maria White	        Data Structures	
+Maria White	        Archaeology of the Incas	
+Maria White	        Aviation Accident Investigation	
+Charles Harris	    Data Structures	
+Charles Harris	    Database Systems	
+Charles Harris	    Operating System Design	
+Charles Harris	    Air Quality Engineering	
+Susan Martin	    Database Systems	
+Susan Martin	    Operating System Design	
+Susan Martin	    Archaeology of the Incas	
+Joseph Thompson	    Data Structures	
+Joseph Thompson	    American Political Parties	
+Joseph Thompson	    Social Cognition	
+Christopher Garcia	Operating System Design	
+Angela Martinez	    Data Structures	
+Thomas Robinson	    Database Systems	
+Thomas Robinson	    Introductory Latin	
+Margaret Clark	    Data Structures	
+Margaret Clark	    Operating System Design	
+Margaret Clark	    Archaeology of the Incas	
+Margaret Clark	    Aviation Accident Investigation	
+Margaret Clark	    Air Quality Engineering	
+Juan Rodriguez	    Data Structures	
+Juan Rodriguez	    Archaeology of the Incas	
+Juan Rodriguez	    Aviation Accident Investigation	
+Dorthy Lewis	    Data Structures	
+Dorthy Lewis	    Database Systems	
+Dorthy Lewis	    Aviation Accident Investigation	
+Dorthy Lewis	    Air Quality Engineering	
+Dorthy Lewis	    Introductory Latin	
+Daniel Lee	        Data Structures	
+Daniel Lee	        Archaeology of the Incas	
+Daniel Lee	        Air Quality Engineering	
+Daniel Lee	        Introductory Latin	
+Daniel Lee	        American Political Parties	
+Lisa Walker	        Data Structures	
+Lisa Walker	        Archaeology of the Incas	
+Lisa Walker	        American Political Parties	
+Lisa Walker	        Social Cognition	
+Paul Hall	        Data Structures	
+Paul Hall	        Operating System Design	
+Paul Hall	        Social Cognition	
+Nancy Allen	        Operating System Design	
+Nancy Allen	        Aviation Accident Investigation	
+Mark Young	        Data Structures	
+Mark Young	        Database Systems	
+Mark Young	        Operating System Design	
+Mark Young	        Aviation Accident Investigation	
+Mark Young	        Air Quality Engineering	
+Luis Hernandez	    Data Structures	
+Luis Hernandez	    Data Structures	
+Luis Hernandez	    Data Structures	
+Luis Hernandez	    Database Systems	
+Luis Hernandez	    Operating System Design	
+Luis Hernandez	    Air Quality Engineering	
+Donald King	        NULL	
+George Wright	    NULL	
+
+#Question 4
+prof_name	
+John Williams	
+Patricia Jones	
+
+#Question 5
+Empty
+
+#Question 6
+Type	NAME	course_code	
+Never   Taught	Perception	CC19	
+Never   Taught	Multivariate Analysis	CC20	
+Never   Taught	Patent Law	CC21	
+Never   Taught	Urban Economics	CC22	
+Never   Taught	Organic Chemistry	CC23	
+Taught  by CS	Data Structures	CC10	
+Taught  by CS	Social Cognition	CC18	
+
+#Question 7
+Type	student_name	
+Student	Margaret Clark	
+Student	Mark Young	
+Teacher	Michael Miller	
+
+#Question 8
+prof_name	        prof_id	
+Mary Johnson	    3	
+Patricia Jones	    5	
+Robert Brown	    7	
+	
+
+#Question 9
+student_name	    prof_name	
+Charles Harris	    Ivana Teach	
+Dorthy Lewis	    Ivana Teach	
+Daniel Lee	        Ivana Teach	
+Joseph Thompson	    Ivana Teach	
+Lisa Walker	        Ivana Teach	
+Paul Hall	        Ivana Teach	
+Luis Hernandez	    Ivana Teach	
+Maria White	        Ivana Teach	
+Margaret Clark	    Ivana Teach	
+Juan Rodriguez	    Ivana Teach	
+Nancy Allen	        Ivana Teach	
+Mark Young	        Ivana Teach	
+Thomas Robinson	    Ivana Teach	
+Maria White	        James Smith	
+Margaret Clark	    James Smith	
+Luis Hernandez	    James Smith	
+Joseph Thompson	    James Smith	
+Lisa Walker	        James Smith	
+Paul Hall	        James Smith		
+Angela Martinez	    John Williams	
+Mark Young	        John Williams	
+Luis Hernandez	    John Williams		
+Margaret Clark	    Patricia Jones	
+Luis Hernandez	    Patricia Jones	
+Maria White	        Michael Miller	
+Juan Rodriguez	    Michael Miller	
+Luis Hernandez	    Michael Miller	
+Susan Martin	    Michael Miller	
+Thomas Robinson	    Michael Miller	
+Mark Young	        Michael Miller	
+Christopher Garcia	Michael Miller	
+Paul Hall	        Michael Miller	
+Nancy Allen	        Michael Miller	
+Charles Harris	    Michael Miller	
+Daniel Lee	        Michael Miller	
+Lisa Walker	        Michael Miller	
+Dorthy Lewis	    Michael Miller	
+NULL	            Robert Brown	
+NULL	            Linda Davis	
+NULL	            John Williams
+NULL	            Mary Johnson
+Donald King	        NULL	
+George Wright	    NULL	
+
+#Question 10
+NAME	                    course_code	    prof_name	        prof_id	
+Data Structures	            CC10	        Ivana Teach	        1	
+Air Quality Engineering	    CC15	        Ivana Teach	        1	
+Operating System Design	    CC12	        Michael Miller	    6	
+
+#Question 11
+dept_id	    dept_name	
+4	        Arts	
+5	        Electronics	
+6	        Mechanics	

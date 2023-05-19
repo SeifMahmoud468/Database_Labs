@@ -1,0 +1,10 @@
+ON Deleting the inserted row that references the Department happens because we cannot delete the row that is referred to it by a foreign key without telling the engine what to do to the referred data either to update it or to delete it or to be cascaded 
+
+INSERT INTO `department` (`Dnumber`, `Dname`, `mgr_ssn`, `mgr_start_date`) VALUES ('1', 'Acconting', '6773', '2022-11-02');
+
+On Inserting a row in the PROJECT table that references a row in the Department that doesn’t exist yet.
+
+INSERT INTO `project`(`Pnumber`, `Pname`, `Plocation`, `Dno`) VALUES ('1','1st Project','Alexandria','2');
+
+To be able to insert the foreign key of the database we can disable the foreign key in order to enter the 1st element “row” in our database manually to enter the data “not the efficient way at all”
+Or we can use “SET FOREIGN_KEY_CHECKS=0;” to disable the foreign key check till we insert the data to one of the tables which must be Department as it is the less content, and all the employees depend on it also the number of managers to the department will be easy to check on it. Then use the “SET FOREIGN_KEY_CHECKS=1;” command to turn it on again.

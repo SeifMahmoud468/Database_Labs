@@ -1,0 +1,381 @@
+/* Question 1 */
+customer_name	
+Mara Hudson	
+Malachi Baxter	
+Mark Franks	
+May Reese	
+Mariko Frederick	
+Madonna Foreman	
+Marvin Rich	
+Macy Holman	
+
+/*Question 2*/
+order_id	TotalItems	TotalDollarAmount	
+1	            1       	3772	
+2	            1       	113675	
+4	            1       	63408	
+7	            2       	112256	
+8	            3       	115217	
+11	            2       	30558	
+14	            1       	207475	
+15	            2       	143171	
+17	            3       	78385	
+18	            4       	220062	
+19	            1       	10959	
+20	            2       	45245	
+22	            1       	9094	
+23	            3       	173920	
+25	            1       	55212	
+26	            2       	148444	
+28	            3       	94516	
+29	            2       	40395	
+31	            1       	59720	
+32	            1       	440	
+33	            3       	59366	
+34	            4       	141024	
+35	            3       	97636	
+37	            3       	69299	
+38	            3       	223593	
+39	            3       	205654	
+41	            1       	17808	
+42	            2       	23466	
+43	            1       	13485	
+44	            4       	333770	
+45	            3       	54640	
+46	            2       	15442	
+47	            1       	7944	
+48	            1       	43568	
+49	            2       	124332	
+50	            1       	20027	
+51	            2       	106100	
+54	            1       	28848	
+55	            1       	38072	
+56	            1       	117860	
+57	            1       	192402	
+58	            1       	49020	
+60	            2       	65032	
+61	            3       	140023	
+64	            2       	124638	
+65	            1       	50892	
+66	            2       	88275	
+67	            3       	211750	
+68	            4       	102159	
+69	            5       	379696	
+71	            1       	15444	
+72	            3       	172527	
+73	            1       	61145	
+74	            3       	178725	
+75	            3       	169335	
+76	            1       	73967	
+77	            4       	438586	
+78	            1       	2228	
+80	            3       	126673	
+87	            4       	144964	
+89	            1       	125799	
+90	            4       	489824	
+91	            2       	109984	
+92	            2       	189006	
+93	            2       	35761	
+94	            2       	54002	
+95	            1       	38927	
+98	            1       	104856	
+100	            1       	56648	
+102	            2       	42774	
+104	            3       	94523	
+105	            1       	76740	
+106	            1       	6795	
+107	            1       	45248	
+108	            1       	61140	
+110	            3       	340608	
+111	            5       	181006	
+112	            1       	92694	
+113	            1       	81224	
+114	            4       	172941	
+115	            4       	229555	
+116	            1       	57440	
+117	            3       	131492	
+118	            2       	21312	
+119	            2       	29822	
+120	            4       	144218	
+123	            1       	2510	
+125	            1       	148470	
+126	            3       	104868	
+127	            2       	193820	
+129	            2       	45240	
+131	            1       	25134	
+132	            3       	159452	
+135	            4       	226181	
+136	            1       	10955	
+138	            3       	202312	
+140	            1       	185058	
+141	            2       	120334	
+142	            1       	73360	
+143	            2       	67107	
+144	            1       	36839	
+145	            2       	240704	
+146	            1       	117540	
+148	            2       	59293	
+149	            2       	192512	
+150	            2       	180017	
+151	            4       	364202	
+152	            3       	149788	
+153	            1       	24508	
+154	            4       	131760	
+155	            1       	139480	
+156	            2       	34595	
+157	            2       	113091	
+158	            2       	165137	
+160	            1       	41106	
+161	            4       	118421	
+162	            1       	13065	
+163	            4       	266843	
+164	            3       	142696	
+166	            2       	51742	
+167	            1       	9405	
+168	            1       	13090	
+169	            2       	75024	
+171	            3       	53577	
+172	            2       	29669	
+173	            1       	69286	
+174	            2       	48274	
+176	            3       	19286	
+178	            2       	184421	
+181	            2       	21225	
+182	            1       	130200	
+183	            2       	119302	
+184	            2       	85600	
+185	            3       	151122	
+186	            1       	54972	
+187	            1       	21078	
+188	            1       	32480	
+189	            3       	157080	
+190	            2       	48772	
+192	            1       	2008	
+193	            2       	155879	
+194	            1       	122784	
+195	            1       	72171	
+196	            1       	64134	
+197	            2       	124255	
+198	            1       	101808	
+199	            2       	156517	
+200	            1       	20545	
+
+/*Question 3*/
+order_id	
+16	
+27	
+28	
+114	
+124	
+182	
+183	
+
+/*Question 4*/
+TotalDollarAmount	
+45245	
+205654	
+211750	
+489824	
+2510	
+
+/*Question 5*/
+127.0.0.1/lab4/warehouse/		http://localhost/phpmyadmin/index.php?route=/database/sql&db=lab4
+
+   Showing rows 0 - 59 (60 total, Query took 0.0006 seconds.)
+
+
+SELECT
+    warehouse.warehouse_id,
+    warehouse.warehouse_city,
+    COUNT(DISTINCT order_item.order_id) AS `No. Orders`
+FROM
+    warehouse
+LEFT JOIN shipment ON shipment.warehouse_id = warehouse.warehouse_id
+LEFT JOIN order_item ON shipment.order_id = order_item.order_id
+GROUP BY
+    warehouse.warehouse_id;
+
+
+warehouse_id	warehouse_city	No. Orders	
+1	                Geelong	3	
+2	                Grande Prairie	2	
+3	                Lede	3	
+4	                Oostende	3	
+5	                Kumluca	2	
+6	                Arica	4	
+7	                Midlands	2	
+8	                Aulnay-sous-Bois	5	
+9	                Soria	0	
+10	                Rouvroy	1	
+11	                Precenicco	5	
+12	                Sesto al Reghena	3	
+13	                Edmundston	1	
+14	                Beho	2	
+15	                Aisén	2	
+16	                Essex	4	
+17	                Merritt	4	
+18	                Ellikom	4	
+19	                l'Escaill re	2	
+20	                Houdemont	0	
+21	                Enterprise	3	
+22	                Queilén	1	
+23	                Southwell	1	
+24	                Recoleta	2	
+25	                Panchià	3	
+26	                Chichester	3	
+27	                Orsara di Puglia	4	
+28	                Coquitlam	2	
+29	                Geertruidenberg	3	
+30	                Alingsås	3	
+31	                Aurora	2	
+32	                Cz?stochowa	2	
+33	                Cheltenham	2	
+34	                Duncan	1	
+35	                Les Bons Villers	2	
+36	                Halifax	0	
+37	                Secunderabad	4	
+38	                La Baie	0	
+39	                Cupar	1	
+40	                Castiglione Messer Raimondo	1	
+41	                Sint-Pauwels	2	
+42	                Moncton	3	
+43	                Martello/Martell	4	
+44	                Biesme-sous-Thuin	7	
+45	                Avennes	4	
+46	                Bierk Bierghes	4	
+47	                Purén	2	
+48	                Schriek	3	
+49	                St. Thomas	7	
+50	                Wardha	1	
+51	                Petit-Thier	3	
+52	                Beerzel	0	
+53	                Aurora	1	
+54	                Contulmo	2	
+55	                Kirriemuir	1	
+56	                Burin	1	
+57	                Harrogate	1	
+58	                Durness	1	
+59	                Whitby	5	
+60	                Shipshaw	5	
+
+/*Question 6*/
+customer_name	No. Of Orders	
+Stewart Tyler	2	
+Christen Guerrero	1	
+Keefe Good	5	
+Chadwick Hogan	2	
+Walter Burton	4	
+Mara Hudson	3	
+Anika Gonzales	2	
+Wang Browning	2	
+Malachi Baxter	4	
+Deanna Morales	3	
+Cyrus Saunders	3	
+Lilah Sanchez	1	
+Echo Bolton	2	
+Channing Lynn	2	
+Jeanette Hester	1	
+Russell Benjamin	0	
+Nita Branch	2	
+Ferris Pollard	2	
+Amal Marsh	1	
+Ferris Foley	2	
+Wang Robertson	2	
+Xyla Hickman	3	
+Jennifer Coleman	1	
+Mark Franks	2	
+Vanna Mullen	1	
+May Reese	2	
+Evelyn Bowers	2	
+Hayden Weber	2	
+Mariko Frederick	2	
+Raven Mann	1	
+Uta Miller	2	
+Guinevere Joyner	2	
+Hayfa Byers	1	
+Henry Bond	4	
+Zelda Love	2	
+Lane Klein	5	
+Addison Meadows	1	
+Venus Townsend	4	
+Charlotte Rios	5	
+Gemma Cote	4	
+Ray Cash	1	
+TaShya Walters	2	
+Kitra Hubbard	1	
+Kristen Barber	1	
+Dora Howe	2	
+Quinlan Greene	4	
+Sylvia Diaz	1	
+Garth Clements	2	
+Angela Burnett	1	
+Brody Whitfield	3	
+Imani Keith	3	
+Kylee Castro	1	
+Fatima Page	2	
+Regan Whitfield	3	
+Todd Burt	2	
+Donna Bernard	2	
+Althea Hebert	1	
+Neville Dyer	4	
+Zachery Pace	2	
+Mohammad Morgan	1	
+Gil Craig	1	
+Brett Zimmerman	2	
+Patricia Quinn	2	
+Madonna Foreman	2	
+Lara Morrison	1	
+Marvin Rich	3	
+Sydney Pierce	1	
+Courtney Dale	4	
+Hoyt Blanchard	2	
+Farrah Gould	3	
+Asher Clayton	2	
+Veda Rasmussen	2	
+Piper Dominguez	2	
+Jordan Best	3	
+Ginger Hood	2	
+Macy Holman	3	
+Bernard Drake	3	
+Harrison Heath	1	
+April Nguyen	2	
+Cade Crosby	3	
+Sawyer Mejia	2	
+Latifah Bullock	3	
+Carly Lowe	2	
+Clarke Mccullough	3	
+Victor Mckinney	1	
+Alexander Wiley	1	
+Noelle George	1	
+Venus Albert	3	
+Myra Santiago	4	
+Kennan Nash	2	
+Josiah Hatfield	3	
+
+/*Question 7*/
+item_id	unit_price	
+3	        9471	
+5	        430	
+9	        9596	
+10	        2786	
+14	        2809	
+16	        3331	
+24	        3170	
+28	        3375	
+34	        3468	
+42	        518	
+51	        1892	
+55	        9142	
+56	        5750	
+73	        6718	
+75	        7380	
+78	        4507	
+80	        2174	
+81	        60	
+84	        3261	
+88	        4846	
+89	        9324	
+92	        7407	
+94	        3356	
+99	        2636	
+109	        1115	
